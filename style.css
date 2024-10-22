@@ -16,13 +16,14 @@ body{
     left: 50%;
     transform: translate(-50%,-50%);
     background-color: white;
+    box-shadow: 0px 0px 10px #737373;
     width: 650px;
 }
 .question{
     padding: 30px 80px;
 }
 .questionHeading h2{
-    margin-bottom: 5px;
+    margin-bottom: 7px;
 }
 .questionHeading{
     margin-bottom: 25px;
@@ -36,5 +37,14 @@ body{
     justify-content: center;
 }
 .submit input[type=submit]{
+    background-color: #428bff;
+    color: white;
     width: 100%;
+    height: 50px;
+    border: none;
+    font-size: 18px;
+    transition: 0.1s linear;
+}
+.submit input[type=submit]:hover{
+    background-color: #1c64d9;
 }
