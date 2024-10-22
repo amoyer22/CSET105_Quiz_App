@@ -5,3 +5,27 @@
     font-family: Arial, Helvetica, sans-serif;
     font-weight: 300;
 }
+
+body{
+    background-color: #c7c7c7;
+}
+
+.quizContainer{
+    position: absolute;
+    top:  50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background-color: white;
+    width: 650px;
+}
+.question{
+    padding: 30px 80px;
+}
+.submit{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.submit input[type=submit]{
+    width: 100%;
+}
