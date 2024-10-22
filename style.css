@@ -21,6 +21,15 @@ body{
 .question{
     padding: 30px 80px;
 }
+.questionHeading h2{
+    margin-bottom: 5px;
+}
+.questionHeading{
+    margin-bottom: 25px;
+}
+.questionAnswers input[type=radio]{
+    margin-bottom: 15px;
+}
 .submit{
     display: flex;
     align-items: center;
