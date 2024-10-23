@@ -1,3 +1,4 @@
+let currentPage = 0
 let quiz = [
     {
         "number": 1,
@@ -50,3 +51,6 @@ let quiz = [
         "answer": "20 minutes"
     }
 ]
+
+function submit(){
+}
