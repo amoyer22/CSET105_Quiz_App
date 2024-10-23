@@ -52,3 +52,7 @@ body{
 .submit input[type=button]:hover{
     background-color: #1c64d9;
 }
+.score{
+    text-align: center;
+    padding: 30px 80px;
+}

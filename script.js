@@ -123,9 +123,17 @@ function submitQuiz(){
             generateQuestion()
         }
         else{
-            document.querySelector(".quizContainer").innerHTML = `<h2 class="score">You scored ${score} out of ${quiz.length}!</h2>`
+            document.querySelector(".quizContainer").innerHTML = `
+            <h2 class="score">You scored ${score} out of ${quiz.length}!</h2>
+            <div class="submit">
+                <input id="restartButton" type="button" value="Retake" onclick="restartQuiz()"
+            </div>`
         }
     }
+}
+
+function restartQuiz(){
+    window.location.reload()
 }
 
 window.onload = function(){
