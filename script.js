@@ -1,56 +1,102 @@
-let currentPage = 0
 let quiz = [
     {
         "question": "According to Google, what year was JavaScript invented?",
-        "options": ["2023", "1995", "1985", "2003"],
-        "answer": "1995"
+        "answers": [
+            {"text": "2023", "correct": false},
+            {"text": "1995", "correct": true},
+            {"text": "1985", "correct": false},
+            {"text": "2003", "correct": false}
+        ]
     },
     {
         "question": "What's 2+2?",
-        "options": ["I don't know math", "undefined", "3", "4"],
-        "answer": "4"
+        "answers": [
+            {"text": "I don't know math", "correct": false},
+            {"text": "undefined", "corrrect": false},
+            {"text": "3", "correct": false},
+            {"text": "4", "correct": true}
+        ]
     },
     {
         "question": "Which of the following fruits are typically red?",
-        "options": ["Apple", "Orange", "Banana", "Watermelon"],
-        "answer": "Apple"
+        "answers": [
+            {"text": "Apple", "correct": true},
+            {"text": "Orange", "corrrect": false},
+            {"text": "Banana", "correct": false},
+            {"text": "Watermelon", "correct": false}
+        ]
     },
     {
         "question": "How long does it take for me to drive to school everyday?",
-        "options": ["12 years", "30 minutes", "15 minutes", "3 seconds"],
-        "answer": "30 minutes"
+        "answers": [
+            {"text": "12 years", "correct": false},
+            {"text": "30 minutes", "corrrect": true},
+            {"text": "15 minutes", "correct": false},
+            {"text": "3 seconds", "correct": false}
+        ]
     },
     {
         "question": "How much wood could a woodchuck chuck...",
-        "options": ["...What?", "...if a woodchuck could chuck wood?", "...700 pounds of wood, actually.", "...Who?"],
-        "answer": "...if a woodchuck could chuck wood?"
+        "answers": [
+            {"text": "...What?", "correct": false},
+            {"text": "...if a woodchuck could chuck wood?", "corrrect": true},
+            {"text": "...700 pounds of wood, actually.", "correct": false},
+            {"text": "...Who?", "correct": false}
+        ]
     },
     {
-        "question": "What question number are you on now?",
-        "options": ["3", "5", "6", "5.591"],
-        "answer": "6"
+        "question": "Amongst the following, which is my favorite social media app?",
+        "answers": [
+            {"text": "TikTok", "correct": false},
+            {"text": "None, my internet never works", "corrrect": false},
+            {"text": "YouTube", "correct": false},
+            {"text": "Discord", "correct": true}
+        ]
     },
     {
         "question": "What is my favorite number?",
-        "options": ["22", "33", "7", "8"],
-        "answer": "22"
+        "answers": [
+            {"text": "22", "correct": true},
+            {"text": "33", "corrrect": false},
+            {"text": "7", "correct": false},
+            {"text": "8", "correct": false}
+        ]
     },
     {
         "question": "What is my favorite word?",
-        "options": ["Boolean", "Sassafras", "Interesting", "Exit"],
-        "answer": "Exit"
+        "answers": [
+            {"text": "Boolean", "correct": false},
+            {"text": "Sassafras", "corrrect": false},
+            {"text": "Interesting", "correct": false},
+            {"text": "Exit", "correct": true}
+        ]
     },
     {
         "question": "What is my favorite color?",
-        "options": ["Hot pink", "A deep purple", "Literally just blue", "Bright neon green"],
-        "answer": "Hot pink"
+        "answers": [
+            {"text": "Hot pink", "correct": true},
+            {"text": "A deep purple", "corrrect": false},
+            {"text": "Literally just blue", "correct": false},
+            {"text": "Bright neon green", "correct": false}
+        ]
     },
     {
         "question": "How long did it take for me to think of questions for this?",
-        "options": ["These are questions?", "Who knows", "20 minutes", "All day"],
-        "answer": "20 minutes"
+        "answers": [
+            {"text": "These are questions?", "correct": false},
+            {"text": "Who knows", "corrrect": false},
+            {"text": "20 minutes", "correct": true},
+            {"text": "All day", "correct": false}
+        ]
     }
 ]
+
+let currentPage = 0
+let score = 0
+
+let submitButton = document.getElementById("submitButton")
+let questionName = document.getElementsByClassName("questionName")
+let answerName = document.getElementById("answerName")
 
 function submit(){
 }
