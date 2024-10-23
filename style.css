@@ -40,7 +40,7 @@ body{
     align-items: center;
     justify-content: center;
 }
-.submit input[type=submit]{
+.submit input[type=button]{
     background-color: #428bff;
     color: white;
     width: 100%;
@@ -49,6 +49,6 @@ body{
     font-size: 18px;
     transition: 0.1s linear;
 }
-.submit input[type=submit]:hover{
+.submit input[type=button]:hover{
     background-color: #1c64d9;
 }
