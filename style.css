@@ -22,11 +22,15 @@ body{
 .question{
     padding: 30px 80px;
 }
-.questionHeading h2{
-    margin-bottom: 7px;
-}
 .questionHeading{
     margin-bottom: 25px;
+}
+.questionHeading h2{
+    color: #616161;
+    margin-bottom: 7px;
+}
+.questionHeading .questionCounter{
+    color:#428bff;
 }
 .questionAnswers input[type=radio]{
     margin-bottom: 15px;
