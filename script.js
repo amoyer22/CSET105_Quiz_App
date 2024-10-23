@@ -109,8 +109,7 @@ function generateQuestion(){
     document.querySelector(".questionCounter").innerText = currentPage + 1
 }
 
-function submitQuiz(event){
-    event.preventDefault()
+function submitQuiz(){
     let selectedAnswer = document.querySelector('input[name="blank"]:checked')
     if(selectedAnswer){
         let answerText = selectedAnswer.value
@@ -124,7 +123,7 @@ function submitQuiz(event){
             generateQuestion()
         }
         else{
-            document.querySelector(".quizContainer").innerHTML = `You scored ${score} out of ${quiz.length}!</h2>`
+            document.querySelector(".quizContainer").innerHTML = `<h2 class="score">You scored ${score} out of ${quiz.length}!</h2>`
         }
     }
 }
